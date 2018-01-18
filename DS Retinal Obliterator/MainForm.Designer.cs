@@ -507,6 +507,11 @@
             // 
             // numericUpDownInterval
             // 
+            this.numericUpDownInterval.Increment = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
             this.numericUpDownInterval.Location = new System.Drawing.Point(6, 32);
             this.numericUpDownInterval.Maximum = new decimal(new int[] {
             60000,
