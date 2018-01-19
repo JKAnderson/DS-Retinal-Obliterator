@@ -18,6 +18,15 @@ namespace DS_Retinal_Obliterator
         private void MainForm_Load(object sender, EventArgs e)
         {
             Text = "DS Retinal Obliterator " + Application.ProductVersion;
+            numericUpDownInterval.Value = Properties.Settings.Default.Interval;
+            numericUpDownBriMin.Value = Properties.Settings.Default.BrightnessMin;
+            numericUpDownBriMax.Value = Properties.Settings.Default.BrightnessMax;
+            numericUpDownConMin.Value = Properties.Settings.Default.ContrastMin;
+            numericUpDownConMax.Value = Properties.Settings.Default.ContrastMax;
+            numericUpDownSatMin.Value = Properties.Settings.Default.SaturationMin;
+            numericUpDownSatMax.Value = Properties.Settings.Default.SaturationMax;
+            numericUpDownHueMin.Value = Properties.Settings.Default.HueMin;
+            numericUpDownHueMax.Value = Properties.Settings.Default.HueMax;
         }
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
@@ -27,6 +36,17 @@ namespace DS_Retinal_Obliterator
                 dsProcess.OverrideFilter(false);
                 dsProcess.Close();
             }
+
+            Properties.Settings.Default.Interval = numericUpDownInterval.Value;
+            Properties.Settings.Default.BrightnessMin = numericUpDownBriMin.Value;
+            Properties.Settings.Default.BrightnessMax = numericUpDownBriMax.Value;
+            Properties.Settings.Default.ContrastMin = numericUpDownConMin.Value;
+            Properties.Settings.Default.ContrastMax = numericUpDownConMax.Value;
+            Properties.Settings.Default.SaturationMin = numericUpDownSatMin.Value;
+            Properties.Settings.Default.SaturationMax = numericUpDownSatMax.Value;
+            Properties.Settings.Default.HueMin = numericUpDownHueMin.Value;
+            Properties.Settings.Default.HueMax = numericUpDownHueMax.Value;
+            Properties.Settings.Default.Save();
         }
 
         private void timerCheckProcess_Tick(object sender, EventArgs e)

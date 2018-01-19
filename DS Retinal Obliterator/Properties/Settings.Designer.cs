@@ -22,5 +22,113 @@ namespace DS_Retinal_Obliterator.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5000")]
+        public decimal Interval {
+            get {
+                return ((decimal)(this["Interval"]));
+            }
+            set {
+                this["Interval"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.25")]
+        public decimal BrightnessMin {
+            get {
+                return ((decimal)(this["BrightnessMin"]));
+            }
+            set {
+                this["BrightnessMin"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2.25")]
+        public decimal BrightnessMax {
+            get {
+                return ((decimal)(this["BrightnessMax"]));
+            }
+            set {
+                this["BrightnessMax"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.75")]
+        public decimal ContrastMin {
+            get {
+                return ((decimal)(this["ContrastMin"]));
+            }
+            set {
+                this["ContrastMin"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2.75")]
+        public decimal ContrastMax {
+            get {
+                return ((decimal)(this["ContrastMax"]));
+            }
+            set {
+                this["ContrastMax"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("-2")]
+        public decimal SaturationMin {
+            get {
+                return ((decimal)(this["SaturationMin"]));
+            }
+            set {
+                this["SaturationMin"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
+        public decimal SaturationMax {
+            get {
+                return ((decimal)(this["SaturationMax"]));
+            }
+            set {
+                this["SaturationMax"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public decimal HueMin {
+            get {
+                return ((decimal)(this["HueMin"]));
+            }
+            set {
+                this["HueMin"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("360")]
+        public decimal HueMax {
+            get {
+                return ((decimal)(this["HueMax"]));
+            }
+            set {
+                this["HueMax"] = value;
+            }
+        }
     }
 }

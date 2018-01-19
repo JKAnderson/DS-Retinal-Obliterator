@@ -90,4 +90,14 @@
     <Content Include="icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if "$(ConfigurationName)" == "Release" (
+  md "$(TargetDir)$(ProjectName)"
+  del "$(TargetDir)$(ProjectName)"
+  copy "$(TargetPath)" "$(TargetDir)$(TargetName)\$(TargetFileName)" /y
+  copy "$(TargetPath).config" "$(TargetDir)$(ProjectName)\$(TargetFileName).config" /y
+  copy "$(TargetDir)$(TargetName).pdb" "$(TargetDir)$(ProjectName)\$(TargetName).pdb" /y
+  copy "$(ProjectDir)readme.txt" "$(TargetDir)$(ProjectName)\readme.txt" /y
+)</PostBuildEvent>
+  </PropertyGroup>
 </Project>
