@@ -531,6 +531,7 @@
             0,
             0,
             0});
+            this.numericUpDownInterval.ValueChanged += new System.EventHandler(this.numericUpDownInterval_ValueChanged);
             // 
             // label4
             // 
