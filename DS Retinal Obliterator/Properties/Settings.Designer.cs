@@ -61,7 +61,7 @@ namespace DS_Retinal_Obliterator.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0.75")]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.5")]
         public decimal ContrastMin {
             get {
                 return ((decimal)(this["ContrastMin"]));
@@ -73,7 +73,7 @@ namespace DS_Retinal_Obliterator.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("2.75")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1.5")]
         public decimal ContrastMax {
             get {
                 return ((decimal)(this["ContrastMax"]));
@@ -85,7 +85,7 @@ namespace DS_Retinal_Obliterator.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("-2")]
+        [global::System.Configuration.DefaultSettingValueAttribute("-5")]
         public decimal SaturationMin {
             get {
                 return ((decimal)(this["SaturationMin"]));
@@ -97,7 +97,7 @@ namespace DS_Retinal_Obliterator.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("2")]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
         public decimal SaturationMax {
             get {
                 return ((decimal)(this["SaturationMax"]));

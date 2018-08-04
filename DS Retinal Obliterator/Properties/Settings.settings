@@ -12,16 +12,16 @@
       <Value Profile="(Default)">2.25</Value>
     </Setting>
     <Setting Name="ContrastMin" Type="System.Decimal" Scope="User">
-      <Value Profile="(Default)">0.75</Value>
+      <Value Profile="(Default)">0.5</Value>
     </Setting>
     <Setting Name="ContrastMax" Type="System.Decimal" Scope="User">
-      <Value Profile="(Default)">2.75</Value>
+      <Value Profile="(Default)">1.5</Value>
     </Setting>
     <Setting Name="SaturationMin" Type="System.Decimal" Scope="User">
-      <Value Profile="(Default)">-2</Value>
+      <Value Profile="(Default)">-5</Value>
     </Setting>
     <Setting Name="SaturationMax" Type="System.Decimal" Scope="User">
-      <Value Profile="(Default)">2</Value>
+      <Value Profile="(Default)">5</Value>
     </Setting>
     <Setting Name="HueMin" Type="System.Decimal" Scope="User">
       <Value Profile="(Default)">0</Value>
